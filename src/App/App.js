@@ -23,7 +23,6 @@ class App extends Component {
 
       const data = await response.json();
       this.setState({ reservations: data });
-      console.log(this.state)
     } catch (error) {
       this.setState({ error: error.message })
     };
