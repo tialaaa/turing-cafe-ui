@@ -1,7 +1,17 @@
 import React, { Component } from 'react';
 import './App.css';
+import Form from '../Form/Form';
+import Container from '../Res_Container/Container';
+import Reservation from '../Reservation/Reservation';
 
 class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      
+    }
+  }
+
   render() {
     return (
       <div className="App">
