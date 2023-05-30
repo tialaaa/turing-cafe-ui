@@ -1,5 +1,5 @@
 import React from 'react';
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import './Reservation.css';
 
 function Reservation({ name, date, time, number }) {
@@ -14,6 +14,11 @@ function Reservation({ name, date, time, number }) {
   );
 }
 
-// add Proptypes
+Reservation.propTypes = {
+  name: PropTypes.string.isRequired,
+  date: PropTypes.string.isRequired,
+  time: PropTypes.string.isRequired,
+  number: PropTypes.number.isRequired
+}
 
 export default Reservation;
